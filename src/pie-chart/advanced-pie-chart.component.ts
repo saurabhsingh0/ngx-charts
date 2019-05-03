@@ -89,6 +89,7 @@ export class AdvancedPieChartComponent extends BaseChartComponent {
   transform: string;
   colors: ColorHelper;
   legendWidth: number;
+  //changed the margin
   margin = [10, 10, 10, 10];
 
   @Input() valueFormatting: (value: number) => any;
