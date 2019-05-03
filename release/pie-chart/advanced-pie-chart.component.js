@@ -33,7 +33,7 @@ var AdvancedPieChartComponent = /** @class */ (function (_super) {
         _this.label = 'Total';
         _this.activate = new EventEmitter();
         _this.deactivate = new EventEmitter();
-        _this.margin = [20, 20, 20, 20];
+        _this.margin = [10, 10, 10, 10];
         return _this;
     }
     AdvancedPieChartComponent.prototype.update = function () {
@@ -48,8 +48,8 @@ var AdvancedPieChartComponent = /** @class */ (function (_super) {
         var xOffset = this.dims.width / 2;
         var yOffset = this.margin[0] + this.dims.height / 2;
         this.legendWidth = this.width - this.dims.width - this.margin[1];
-        this.outerRadius = Math.min(this.dims.width, this.dims.height) / 2.5;
-        this.innerRadius = this.outerRadius * 0.75;
+        this.outerRadius = Math.min(this.dims.width, this.dims.height) / 1.5;
+        this.innerRadius = this.outerRadius * 0.85;
         this.transform = "translate(" + xOffset + " , " + yOffset + ")";
     };
     AdvancedPieChartComponent.prototype.getDomain = function () {
