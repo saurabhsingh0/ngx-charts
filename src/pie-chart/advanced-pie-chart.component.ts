@@ -89,7 +89,7 @@ export class AdvancedPieChartComponent extends BaseChartComponent {
   transform: string;
   colors: ColorHelper;
   legendWidth: number;
-  margin = [20, 20, 20, 20];
+  margin = [10, 10, 10, 10];
 
   @Input() valueFormatting: (value: number) => any;
   @Input() nameFormatting: (value: string) => any;
@@ -111,8 +111,8 @@ export class AdvancedPieChartComponent extends BaseChartComponent {
     const yOffset = this.margin[0] + this.dims.height / 2;
     this.legendWidth = this.width - this.dims.width - this.margin[1];
 
-    this.outerRadius = Math.min(this.dims.width, this.dims.height) / 2.5;
-    this.innerRadius = this.outerRadius * 0.75;
+    this.outerRadius = Math.min(this.dims.width, this.dims.height) / 2;
+    this.innerRadius = this.outerRadius * 0.85;
 
     this.transform = `translate(${xOffset} , ${yOffset})`;
   }
