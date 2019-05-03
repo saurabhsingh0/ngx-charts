@@ -48,7 +48,7 @@ var AdvancedPieChartComponent = /** @class */ (function (_super) {
         var xOffset = this.dims.width / 2;
         var yOffset = this.margin[0] + this.dims.height / 2;
         this.legendWidth = this.width - this.dims.width - this.margin[1];
-        this.outerRadius = Math.min(this.dims.width, this.dims.height) / 1.5;
+        this.outerRadius = Math.min(this.dims.width, this.dims.height) / 1.8;
         this.innerRadius = this.outerRadius * 0.85;
         this.transform = "translate(" + xOffset + " , " + yOffset + ")";
     };
